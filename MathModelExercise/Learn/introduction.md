@@ -1,0 +1,2 @@
+## 这是基于 【【数学建模模型算法速成（Matlab/Python双语言）】数学建模竞赛必学模型算法！！！数学建模国赛美赛必看推荐教程！！！！！】 https://www.bilibili.com/video/BV1EK41187QF/?share_source=copy_web&vd_source=f3b842c5fa9cddca3e0302581cfa57d3 的学习文件夹
+### 2026.3
