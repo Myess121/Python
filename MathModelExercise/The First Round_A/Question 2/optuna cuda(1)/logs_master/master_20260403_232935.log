@@ -1,0 +1,4 @@
+2026-04-03 23:29:35,606 - INFO - 初始化CUDA模拟器...
+2026-04-03 23:29:35,607 - INFO - init
+2026-04-03 23:29:35,938 - INFO - add pending dealloc: cuMemFree_v2 1083392 bytes
+2026-04-03 23:29:35,938 - INFO - add pending dealloc: cuStreamDestroy_v2 ? bytes

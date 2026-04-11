@@ -1,0 +1,9 @@
+2026-04-04 00:00:39,531 - INFO - 初始化模拟器...
+2026-04-04 00:00:40,557 - INFO - 开始优化 - 试验次数: 100
+2026-04-04 00:00:40,645 - INFO - [master] Trial 0: 测试参数 {'H': 6, 'pop_size': 25, 'max_iter': 25, 'w_start': 0.8736109604171406, 'w_end': 0.2624074561769746, 'c1': 1.233991780504304, 'c2': 1.0871254182522991, 'penalty_coef': 4397.7926559872085}
+2026-04-04 00:00:45,353 - ERROR - 评估失败: cannot access local variable 'horizon' where it is not associated with a value
+2026-04-04 00:00:45,382 - INFO - [master] Trial 0: 时间=infh, 10h率=0.0%, 耗时=4.7s
+2026-04-04 00:00:45,683 - INFO - [master] Trial 1: 测试参数 {'H': 9, 'pop_size': 20, 'max_iter': 10, 'w_start': 0.9812738571269783, 'w_end': 0.5329770563201687, 'c1': 1.3185086660174141, 'c2': 1.2727374508106508, 'penalty_coef': 1325.3202943404522}
+2026-04-04 00:00:50,678 - ERROR - 评估失败: cannot access local variable 'horizon' where it is not associated with a value
+2026-04-04 00:00:50,701 - INFO - [master] Trial 1: 时间=infh, 10h率=0.0%, 耗时=5.0s
+2026-04-04 00:00:50,791 - INFO - [master] Trial 2: 测试参数 {'H': 6, 'pop_size': 17, 'max_iter': 19, 'w_start': 0.7844564506574321, 'w_end': 0.44474115788895174, 'c1': 1.2092407909780627, 'c2': 1.4382169728028273, 'penalty_coef': 2148.6282948216126}

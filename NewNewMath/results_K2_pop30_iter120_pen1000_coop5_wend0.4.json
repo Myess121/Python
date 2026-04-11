@@ -1,0 +1,22 @@
+{
+  "params": {
+    "pop_size": 30,
+    "max_iter": 120,
+    "penalty_coef": 1000,
+    "coop_gap": 5,
+    "w_end": 0.4
+  },
+  "steps_list": [
+    157,
+    360,
+    289,
+    76,
+    345,
+    360,
+    210,
+    199,
+    91,
+    234
+  ],
+  "completed": 10
+}

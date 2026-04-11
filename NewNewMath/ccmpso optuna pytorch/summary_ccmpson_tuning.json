@@ -1,0 +1,89 @@
+{
+  "timestamp": "20260405_060248",
+  "algorithm": "CC-MPSO",
+  "config": {
+    "K_list": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "N_TRIALS_PER_K": 50,
+    "N_SIM_PER_EVAL": 50,
+    "RANDOM_SEED": 42
+  },
+  "results": [
+    {
+      "K": 1,
+      "timestamp": "20260405_011708",
+      "best_avg_time": 24.891111111111112,
+      "best_params": {
+        "H": 3,
+        "pop_size": 25,
+        "max_iter": 15,
+        "w_start": 0.9273301005196954,
+        "w_end": 0.19057299356000593,
+        "c1": 1.7950267412247785,
+        "c2": 1.1740532913072932,
+        "penalty_coef": 1800.170052944527
+      },
+      "detection_rate_10h": 22.0,
+      "detection_rate_20h": 44.0,
+      "detection_rate_40h": 62.0
+    },
+    {
+      "K": 2,
+      "timestamp": "20260405_020346",
+      "best_avg_time": 18.966666666666665,
+      "best_params": {
+        "H": 4,
+        "pop_size": 35,
+        "max_iter": 31,
+        "w_start": 0.8496646210492591,
+        "w_end": 0.1546065241548528,
+        "c1": 1.1871934244034432,
+        "c2": 0.8697003346018394,
+        "penalty_coef": 2665.440364437338
+      },
+      "detection_rate_10h": 36.0,
+      "detection_rate_20h": 60.0,
+      "detection_rate_40h": 88.0
+    },
+    {
+      "K": 3,
+      "timestamp": "20260405_032105",
+      "best_avg_time": 13.297777777777778,
+      "best_params": {
+        "H": 3,
+        "pop_size": 27,
+        "max_iter": 21,
+        "w_start": 0.9298236453887718,
+        "w_end": 0.21253869438484826,
+        "c1": 1.1315848274557079,
+        "c2": 1.1368071517644387,
+        "penalty_coef": 1049.3428533171289
+      },
+      "detection_rate_10h": 54.0,
+      "detection_rate_20h": 80.0,
+      "detection_rate_40h": 96.0
+    },
+    {
+      "K": 4,
+      "timestamp": "20260405_044000",
+      "best_avg_time": 10.486666666666666,
+      "best_params": {
+        "H": 3,
+        "pop_size": 31,
+        "max_iter": 17,
+        "w_start": 0.7780398938812709,
+        "w_end": 0.23162699565098618,
+        "c1": 1.4633690569183764,
+        "c2": 1.7974216068558397,
+        "penalty_coef": 1653.2633849152728
+      },
+      "detection_rate_10h": 54.0,
+      "detection_rate_20h": 90.0,
+      "detection_rate_40h": 100.0
+    }
+  ]
+}

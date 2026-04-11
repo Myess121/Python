@@ -1,0 +1,14 @@
+{
+  "params": {
+    "pop_size": 50,
+    "max_iter": 40,
+    "penalty_coef": 1000,
+    "coop_gap": 5,
+    "w_end": 0.4
+  },
+  "target_sims": 50,
+  "avg_time_hours": 16.53111111111111,
+  "std_time_hours": 10.91919343107288,
+  "rate_within_10h": 42.0,
+  "rate_within_40h": 96.0
+}
