@@ -1,0 +1,4 @@
+Algorithm,Path_Length,Min_SNR_dB,Interrupt_Steps,Run_Time_s
+A*,41,83.05637171949238,0,0.0114
+Standard D* Lite,41,68.61670693391196,5,0.0447
+Comm-Aware D* Lite,41,76.7449148170897,0,0.0972
