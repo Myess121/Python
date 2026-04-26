@@ -3,4 +3,5 @@
 ## 包含
 ### numpy 2.4.2
 ### pandas 3.0.1
-### matplotlib 3.10.8 等
+### matplotlib 3.10.8 等、
+# 环境废了
