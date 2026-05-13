@@ -48,10 +48,10 @@ def plot_snr_timeline(results_dict, save_name="results/snr_timeline.png"):
     colors = {'A*': 'blue', 'Standard D* Lite': 'green', 'Comm-Aware D* Lite': 'orange'}
     for name, data in results_dict.items():
         plt.plot(data['SNR'], label=name, color=colors.get(name, 'gray'), linewidth=2)
-    plt.axhline(y=SNR_THRESHOLD, color='red', linestyle='--', label=f'SNR Threshold ({SNR_THRESHOLD} dB)')
+    plt.axhline(y=SNR_THRESHOLD, color='red', linestyle='--', label=f'LQM Threshold ({SNR_THRESHOLD})')
     plt.title("SNR Variation Along Planned Paths")
     plt.xlabel("Path Step")
-    plt.ylabel("SNR (dB)")
+    plt.ylabel("LQM")
     plt.legend()
     plt.grid(True, alpha=0.3)
     plt.savefig(save_name, dpi=300, bbox_inches='tight')

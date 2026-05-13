@@ -28,7 +28,7 @@ ax.scatter([], [], c='dimgray', marker='s', s=100, label='Static Obstacles ($\ma
 
 # 2.2 干扰源 (Jammer) 与干扰场
 jammer_pos = (25, 15)
-interference_zone = patches.Circle(jammer_pos, radius=8, color='red', alpha=0.2, label='Low SNR Zone (Interference)')
+interference_zone = patches.Circle(jammer_pos, radius=8, color='red', alpha=0.2, label='Low LQM Zone (Interference)')
 ax.add_patch(interference_zone)
 ax.scatter(*jammer_pos, c='red', marker='X', s=150, zorder=5, label='Dynamic Jammer ($J$)')
 ax.arrow(25, 15, 2, 3, head_width=1, head_length=1.5, fc='red', ec='red', zorder=5)
@@ -63,7 +63,7 @@ ax.scatter(*uav_pos, c='orange', marker='h', s=180, edgecolor='black', zorder=6,
 # ================= 4. 通信链路示意 =================
 ax.plot([gs_pos[0], uav_pos[0]], [gs_pos[1], uav_pos[1]],
         linestyle=':', color='blue', linewidth=2, zorder=3)
-ax.text(12, 16, 'LoRa Link\n(SNR > Threshold)', color='blue', fontsize=10, fontweight='bold', rotation=45)
+ax.text(12, 16, 'LoRa Link\n(LQM > Threshold)', color='blue', fontsize=10, fontweight='bold', rotation=45)
 
 # ================= 5. 图例与输出 =================
 # 【核心修改点】将图例移到图表外部正下方，并分为3列

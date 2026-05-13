@@ -1,0 +1,24 @@
+// Compact Irrigation
+digraph {
+	rankdir=TB size="6,8"
+	nodesep=0.2 ranksep=0.3
+	node [fontname="Microsoft YaHei" fontsize=10 height=0.3 margin="0.1,0.05" shape=rect style="filled, rounded" width=1.0]
+	S [label="开始" color="#566573" fillcolor="#D5D8DC"]
+	A [label="采集数据" color="#2E86C1" fillcolor="#AED6F1"]
+	B [label="加权融合" color="#2E86C1" fillcolor="#AED6F1"]
+	C [label="达标？" color="#D4AC0D" fillcolor="#F9E79F" shape=diamond]
+	D [label="启动灌溉" color="#28B463" fillcolor="#ABEBC6"]
+	E [label="监测指数" color="#28B463" fillcolor="#ABEBC6"]
+	F [label="停止？" color="#D4AC0D" fillcolor="#F9E79F" shape=diamond]
+	G [label="停止灌溉" color="#CB4335" fillcolor="#F2D7D5"]
+	S -> A
+	A -> B
+	B -> C
+	C -> D [label="是"]
+	C -> A [label="否"]
+	D -> E
+	E -> F
+	F -> G [label="是"]
+	F -> E [label="否"]
+	G -> A [label="循环"]
+}

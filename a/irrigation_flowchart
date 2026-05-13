@@ -1,0 +1,26 @@
+// Smart Irrigation System
+digraph {
+	bgcolor=transparent rankdir=LR size="12,5"
+	node [color="#2C3E50" fontcolor=white fontname="Microsoft YaHei" fontsize=12 shape=rect style="filled, rounded"]
+	edge [arrowhead=vee color="#7F8C8D" fontname="Microsoft YaHei" fontsize=10]
+	Start [label="开始" fillcolor="#E74C3C"]
+	Data [label="采集多源数据" fillcolor="#3498DB"]
+	Fusion [label="加权融合
+计算需水指数" fillcolor="#3498DB"]
+	Check1 [label="需水指数 > 阈值
+且允许灌溉？" fillcolor="#F1C40F" fontcolor=black shape=diamond]
+	StartIrr [label="启动灌溉" fillcolor="#2ECC71"]
+	Monitor [label="监测指数" fillcolor="#1ABC9C"]
+	Check2 [label="停止条件满足？" fillcolor="#F1C40F" fontcolor=black shape=diamond]
+	StopIrr [label="停止灌溉" fillcolor="#95A5A6"]
+	Start -> Data
+	Data -> Fusion
+	Fusion -> Check1
+	Check1 -> StartIrr [label=" 是"]
+	Check1 -> Data [label=" 否" constraint=false]
+	StartIrr -> Monitor
+	Monitor -> Check2
+	Check2 -> StopIrr [label=" 是"]
+	Check2 -> Monitor [label=" 否"]
+	StopIrr -> Data [label=" 循环"]
+}
